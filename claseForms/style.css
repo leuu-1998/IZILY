@@ -1,0 +1,76 @@
+/* padding (transparente) es para de la caja hacia adentro osea se mide desde el borde hacia adentro
+    y es para que los elementos no esten pegados a los bordes
+
+   content(se puede ver) es todo lo que esta dentro widt es el largo que queremos y height es el 
+   alto que tendra.
+
+   border(se puede ver) es para darle estilo al contorno de la caja
+
+    margin(transparente) es un espacio externo desde el contorno de la caja
+
+    el tamaño de fuente por defecto es 16px entonces 100% es el 100% de 16 ...etc
+
+
+*/
+
+
+* {             /* el navegador agraga estilos por dafault
+                    nosotros podemos crear un selector universal 
+                    dado por *{  }    */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     /* toma el porcentaje del expacio que tengo disponible,suma el padd mas el widt */
+    background: #EDEFF1;
+
+}
+.imag {
+    width: 60%;
+    height: 100%;
+    margin:  0%;
+    padding: 0%;
+    float: left;
+}
+.imag img{
+    width: 100%;
+    height: 100%;
+}
+.form-register {
+    width: 25%;
+    background: #ffffff;
+    padding: 30px;
+    margin: 5%;
+    border-radius: 7px;
+    font-family: 'calibri';
+    color: white;
+    float: right;
+    margin-top: 9%;
+}
+
+.form-register h4 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #3493C2;
+    background: #ffffff;
+}
+
+.controls {
+    width: 100%;
+    background:#EDEFF1;
+    padding:  10px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #242424;
+    font-family:  'calibri';
+    font-size: 18px;
+}
+.form-register .botons {
+    width: 100%;
+    background: #3493C2;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
